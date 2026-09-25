@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Oliver Rice</title>
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --text: #0057FF;
+    --muted: #0057FF;
+    --link: #0057FF;
+    --rule: #CFE0FF;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5.5rem 1.5rem 6rem;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .left {
+    position: sticky;
+    top: 3rem;
+  }
+  h1 {
+    font-size: 2.1rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    margin: 0 0 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  p.bio {
+    font-size: 1.05rem;
+    color: var(--text);
+    margin: 0;
+    text-align: justify;
+  }
+  p.bio em { font-style: italic; color: var(--muted); }
+  .right section { margin-bottom: 2.75rem; }
+  .right section:last-of-type { margin-bottom: 0; }
+  h2 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text);
+    margin: 0 0 0.9rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 0 0 0.9rem;
+    font-size: 1.02rem;
+  }
+  li:last-child { margin-bottom: 0; }
+  a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  a:hover, a:focus-visible {
+    color: var(--link);
+    border-color: var(--link);
+  }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 1px; }
+  ::selection { background: var(--rule); }
+  .pub {
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  @media (max-width: 700px) {
+    main {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      padding: 3.5rem 1.25rem 4rem;
+    }
+    .left { position: static; }
+    h1 { font-size: 1.8rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="left">
+    <h1><span>Oliver</span><span>Rice</span></h1>
+    <p class="bio">I am a writer and graduate student in Philosophy of Religions at the University of Chicago. My book reviews, essays, and interviews have appeared in the <em>Los Angeles Review of Books</em>, <em>The Hedgehog Review</em>, and <em>Tricycle: The Buddhist Review</em>.</p>
+  </div>
+
+  <div class="right">
+    <section>
+      <h2>(Reviews)</h2>
+      <ul>
+        <li><a href="https://hedgehogreview.com/web-features/thr/posts/slouching-toward-paris" target="_blank" rel="noopener">On French theory</a> <span class="pub">— The Hedgehog Review</span></li>
+        <li><a href="https://lareviewofbooks.org/article/transcendence-for-beginners-biography-philosophy-spinoza-clare-carlisle/" target="_blank" rel="noopener">On philosophy and biography</a> <span class="pub">— Los Angeles Review of Books</span></li>
+        <li><a href="https://tricycle.org/magazine/jamieson-webster-on-breathing/" target="_blank" rel="noopener">On breathing</a> <span class="pub">— Tricycle</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>(Essays)</h2>
+      <ul>
+        <li><a href="https://tricycle.org/article/derek-parfit/" target="_blank" rel="noopener">On Derek Parfit's Buddhist affinities</a> <span class="pub">— Tricycle</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>(Interviews)</h2>
+      <ul>
+        <li><a href="https://tricycle.org/article/the-logic-of-paradox/" target="_blank" rel="noopener">Graham Priest on the logic of contradiction</a> <span class="pub">— Tricycle</span></li>
+        <li><a href="https://tricycle.org/article/future-flowers/" target="_blank" rel="noopener">Miranda Mellis on speculative fiction</a> <span class="pub">— Tricycle</span></li>
+      </ul>
+    </section>
+  </div>
+</main>
+</body>
+</html>
