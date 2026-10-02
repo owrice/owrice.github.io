@@ -88,6 +88,14 @@
     color: var(--muted);
     font-size: 0.92rem;
   }
+  .books {
+    margin-top: 0.3rem;
+    padding-left: 1.25rem;
+    font-size: 0.92rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .books em { font-style: italic; }
   @media (max-width: 700px) {
     main {
       grid-template-columns: 1fr;
@@ -110,9 +118,25 @@
     <section>
       <h2>(Reviews)</h2>
       <ul>
-        <li><a href="https://hedgehogreview.com/web-features/thr/posts/slouching-toward-paris" target="_blank" rel="noopener">On French theory</a> <span class="pub">— The Hedgehog Review</span></li>
-        <li><a href="https://lareviewofbooks.org/article/transcendence-for-beginners-biography-philosophy-spinoza-clare-carlisle/" target="_blank" rel="noopener">On philosophy and biography</a> <span class="pub">— Los Angeles Review of Books</span></li>
-        <li><a href="https://tricycle.org/magazine/jamieson-webster-on-breathing/?utm_campaign=1ea4659b-a10b-459d-a5e4-101694544ec7&utm_source=p3s4h3r3s" target="_blank" rel="noopener">On breathing</a> <span class="pub">— Tricycle</span></li>
+        <li>
+          <a href="https://hedgehogreview.com/web-features/thr/posts/slouching-toward-paris" target="_blank" rel="noopener">On theory memoirs</a> <span class="pub">— The Hedgehog Review</span>
+          <div class="books">
+            <div>Brian Dillon, <em>Ambivalence</em></div>
+            <div>Emily Eakin, <em>The Frenchmen</em></div>
+          </div>
+        </li>
+        <li>
+          <a href="https://lareviewofbooks.org/article/transcendence-for-beginners-biography-philosophy-spinoza-clare-carlisle/" target="_blank" rel="noopener">On philosophy and biography</a> <span class="pub">— Los Angeles Review of Books</span>
+          <div class="books">
+            <div>Clare Carlisle, <em>Transcendence for Beginners</em></div>
+          </div>
+        </li>
+        <li>
+          <a href="https://tricycle.org/magazine/jamieson-webster-on-breathing/?utm_campaign=1ea4659b-a10b-459d-a5e4-101694544ec7&utm_source=p3s4h3r3s" target="_blank" rel="noopener">On breathing</a> <span class="pub">— Tricycle</span>
+          <div class="books">
+            <div>Jamieson Webster, <em>On Breathing</em></div>
+          </div>
+        </li>
       </ul>
     </section>
 
